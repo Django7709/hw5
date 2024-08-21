@@ -43,7 +43,7 @@ public class Main {
         }
 // задача 5
         int age4 = 9;
-        if (age4 < 5) {
+        if (age4 <= 5) {
             System.out.println(" Если возраст человека меньше -" + age4 + " то на аттракцион нельзя ");
         }
         else if (age4 > 5 && (age4 <= 14)) {
