@@ -2,52 +2,53 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 // задача 1
-        int age = 18;
+        int age = 21;
         if (age >= 18) {
             System.out.println(" Человек достиг совершеннолетия, если ему исполнилось " + age);
-        } else if (age <=18) {
+        } else {
             System.out.println(" Если возраст человека равен " + age + " то он не достиг совершеннолетия, нужно немного подождать ");
         }
 // задача 2
-        int temperature = 5;
-        if (temperature <= 5) {
-            System.out.println(" На улице холодно, нужно надеть шапку ");
-        } else if (temperature >= 5) {
-            System.out.println(" На улице тепло, шапку можно не надевать");
+        int temperature = 6;
+        if (temperature < 5) {
+            System.out.println(" Если на улице " + temperature + " градусов нужно надеть шапку ");
+        } else {
+            System.out.println(" Если на улице " + temperature + " градусов шапку можно не надевать");
         }
 // задача 3
-        int speed = 60;
-        if (speed >= 60) {
-            System.out.println(" Если скорость превышает больше " + speed + " то придет штраф");
-        } else if (speed <= 60) {
-            System.out.println(" Если скорость меньше" + speed + " то штраф не придет");
+        int speed = 90;
+        if (speed > 60) {
+            System.out.println(" Если скорость больше " + speed + " то придется заплатить штраф");
+        } else {
+            System.out.println(" Если скорость меньше" + speed + " то штрафа не будет");
         }
 // задача 4
-        int age3 = 2;
+         int age3 = 6;
         if (age3 <= 2) {
             System.out.println(" Если возраст человека равен - " + age3 + ", то ему пора спать");
         }
-        else if (age3 >= 2 && age3 <= 6) {
+        else if (age3 >= 2 && (age3 <= 6)) {
             System.out.println(" Если возраст человека больше - " + age3 + ", то ему нужно ходить в детский сад ");
         }
-        else if (age3 >= 7 && age3 <= 18) {
+        else if (age3 >= 7 && (age3 <= 18) {
             System.out.println(" Если возраст человека больше - " + age3 + ", то ему нужно ходить в детский сад ");
         }
-        else if (age3 >= 18 && age3 <= 24) {
+        else if (age3 >= 18 && (age3 <= 24)) {
             System.out.println(" Если возраст человека больше - " + age3 + ", то ему нужно ходить в униврситет");
         }
-        else if (age3 >= 24 && age3 <= 60) {
+        else if (age3 >= 24 && (age3 <= 60)) {
             System.out.println("Если возраст человека -" + age3 + ", то ему нужно ходить на работу");
-        }
-        else if (age3 >= 60) {
+        } else if (age3 >= 60) {
             System.out.println("Если возраст человека равен - " + age3 + ", то ему уже пора отдыхать");
         }
 // задача 5
-        int age4 = 5;
+        int age4 = 9;
         if (age4 <= 5) {
             System.out.println(" Если возраст человека меньше -" + age4 + " то на аттракцион нельзя ");
-        } else if (age4 >= 5 && age4 <= 14) {
-            System.out.println("Если возраст человека больше -" + age4 + " то ему можно на аттракцион в сопровождении взрослого");
+        }
+        else if (age4 > 5 && (age4 <= 14)) {
+            System.out.println("Если возраст человека больше -" + age4 + " но меньше" + age4 +
+                    " то ему можно на аттракцион в сопровождении взрослого");
         }
         else if (age4 >= 14) {
             System.out.println(" Если человеку больше -" + age4 + "то ему можно без соправождения взрослого");
